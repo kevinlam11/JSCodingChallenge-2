@@ -16,4 +16,4 @@ function removeNegative(x) {
 
 const x = [-183, 717, 13, -304, 25];
 const result = removeNegative(x);
-console.log(result); // [1, 3, 5]
+console.log(result);
