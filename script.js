@@ -1,10 +1,19 @@
 // In this challenge, you’ll have a function that takes an array as input and returns an array. But if all goes according to plan, it’ll remove the negative numbers. This is another example of a task that’ll be useful when combing through data and looking for clever ways to eliminate “bad data.”
-function array(x, y, z) {
-  // array checks if each argument is a positive number using our typeOf keyword
-  if ((typeof x, y, z >= 10000)) {
-    console.log("Yep. They are all positive numbers ");
-  } else {
+function removeNegative(x) {
+  // Create new array to store positive numbers
+  let resultArr = [];
+  // Loop through the input array
+  for (let i = 0; i < x.length; i++) {
+    // Check if current number is positive
+    if (x[i] >= 0) {
+      // Add positive number to the result array
+      resultArr.push(x[i]);
+    }
   }
+  // Return the new array with positive numbers
+  return resultArr;
 }
 
-array();
+const x = [-183, 717, 13, -304, 25];
+const result = removeNegative(x);
+console.log(result); // [1, 3, 5]
